@@ -1,8 +1,5 @@
 # BIS Processing Pipeline
 
-fMRI Preprocessing Pipeline for BIS
-
-*Note: The following documentation covers my bash scripts only. The excellent Python scripts were created by [Javid Dadashkarimi](https://github.com/dadashkarimi).*
 
 ## Getting Started
 
@@ -11,11 +8,6 @@ fMRI Preprocessing Pipeline for BIS
 1. Required software: BIS (legacy), FSL, AFNI, SPM, Matlab
 
 2. Data must be in BIDS format (e.g., subID/session1/func/task1\_run1.nii.gz, subID/session1/anat, etc.)
-
-
-### User-defined Parameters
-
-1. User-defined parameters must be specified in a config file (see config/cfg.sh). At minimum, users must specify information about study data.
 
 ### Overview
 
@@ -37,5 +29,5 @@ fMRI Preprocessing Pipeline for BIS
 
 1. Edit paths and parameters in config/cfg.sh
 
-2. Run `bis_processing_pipeline.sh config/cfg.sh`
+2. Run `python preprocessing.py`
 
